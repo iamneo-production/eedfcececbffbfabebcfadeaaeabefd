@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<title>Web Page Stylling-CSS</title>
+<style>
+img{
+    width:100px;
+    height:100px;
+}
+body{
+    background-color: black;
+    font-family:'Lucida Sans';
+    font-weight:bold;
+    color:white;
+
+}
+#lists{
+    list-style-type:none;
+    margin:0px;
+    padding:0px;
+    background-color:white;
+    display:inline-block;
+    height:900px;
+    align-items:center;
+    width:150px;
+    position:fixed;
+}
+#login,#table,#image,#frames{
+    text-decoration: none;
+}
+li{
+    padding-bottom:30px;
+    padding-left:30px;
+    padding-right:30px;
+}
+li a:hover{
+    background-color:red;
+
+}
+#title{
+    text-align:center;
+    padding-top:20%;
+    font-size: 45px;
+    padding-left:80px;
+}
+#description{
+    opacity:0.8;
+    text-align:center;
+    padding-left:80px;
+}
+#headingLists{
+    font-size:25px;
+    color:black;
+    font-weight: bolder;
+    font-family:'Arial Narrow Bold';
+    padding-left:0px;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+<nav id="navigationPannel">
+<ul id="lists">
+<li><h3 id="headingLists">CSS Of Webpages</h3></li>
+<li ><a id="login" href="login.html"><img src="data:image/png;base64,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"></a></li>
+<li><a  id="table" href="table.html"><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT4lLIBGwBvfMxIm5Vj8UiumgCVYgD4O7zJsCjfKqXZxX7wzxTP"></a></li>
+<li><a  id="image" href="image.html"><img src="data:image/png;base64,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"></a></li>
+<li><a id="frames" href="frames.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3D4sranUHa53SHZ8VsNGxehJ0V4StH_Tf3A&usqp=CAU"></a></li>
+</ul>
+</nav>    
+<h1 id="title">WEB PAGE STYLING WITH CSS</h1>
+<p id="description">Each icon has its own navigation link. It can be moved to different web Pages </p>
+</body>
+</html>
+
